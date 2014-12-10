@@ -10,3 +10,6 @@ Example usage:<br/>
 [[!FormIt? &hooks=`noCaptcha` &preHooks=`preNoCaptcha` &ncTheme=`light|dark` &ncName=`other name for placeholder` &ncType=`image|audio` ]]
 
 See simple_example.html for an simple example. :)
+
+Roadmap<br/>
+- support multiple instances on one page

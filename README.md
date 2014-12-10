@@ -11,5 +11,12 @@ Example usage:<br/>
 
 See simple_example.html for an simple example. :)
 
-Roadmap<br/>
+To Install
+- create the categorie noCaptcha for the following snippets and chunk
+- create the snippet named noCaptcha with the contents of noCaptcha.php
+- create the snippet named preNoCaptcha with the contents of preNoCaptcha.php
+- create the chunk nocaptcha_tpl with the contents of nocaptcha_tpl.html
+- Take a look at simple_example.html for usage
+
+Roadmap
 - support multiple instances on one page

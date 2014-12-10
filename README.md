@@ -8,3 +8,5 @@ For more information about FormIt see: http://rtfm.modx.com/extras/revo/formit
 
 Example usage:
 [[!FormIt? &hooks=`noCaptcha` &preHooks=`preNoCaptcha` &ncTheme=`light|dark` &ncName=`other name for placeholder` &ncType=`image|audio` ]]
+
+See basic_example.html for an basic example. :)

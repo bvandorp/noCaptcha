@@ -5,7 +5,7 @@
 		This preHook is needed to generate the field for noCaptcha and call the script
 		It needs the chunk nocaptcha_tpl to be created from the nocaptcha_tpl.html
 		
-		usage: [[!FormIt? &preHooks=`preNoCaptcha`]]
+		usage: [[!FormIt? &preHooks=`preNoCaptcha` &ncTheme=`light|dark` &ncName=`other name for placeholder` &ncType=`image|audio` ]]
 		
 	*/
 	
@@ -13,12 +13,18 @@
 	$output;
 	$placeholders;
 	$site_key = $modx->getOption('formit.recaptcha_public_key', $scriptProperties, '');
-	$phName = $modx->getOption('phName', $scriptProperties, 'nocaptcha');
+	$theme = $hook->formit->config['ncTheme'] ?: 'light';
+	$phName = $hook->formit->config['ncName'] ?: 'nocaptcha';
+	//used when fallback to captcha
+	$ncType = $hook->formit->config['ncType'] ?: 'image';
+	
 	
 	if(!empty($site_key)){
 		//set array for placeholders
 		$placeholders = array(
 	    	'site_key' => $site_key,
+	    	'theme' => $theme,
+	    	'type' => $ncType
 		);
 		//get generated chunk
 		$output = $modx->getChunk('nocaptcha_tpl', $placeholders);	

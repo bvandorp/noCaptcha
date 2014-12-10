@@ -3,12 +3,12 @@
     <title>reCAPTCHA demo: Simple page</title>
   </head>
   <body>
-    [[!FormIt? &preHooks=`preNoCaptcha` &hooks=`noCaptcha,redirect` &redirectTo=`1`]]
+    [[!FormIt? &preHooks=`preNoCaptcha` &hooks=`noCaptcha,redirect` &redirectTo=`1` &ncTheme=`light` &ncType=`image`]]
 
 	<form action="[[~[[*id]]]]" method="post">
 		<input type="text" name="naam" value="" placeholder="naam" /><br/>
 		[[+nocaptcha]]
-		<input type="submit" value="Submit">
+		<input type="submit" name="captcha" value="Submit">
 	</form>
   </body>
 </html>

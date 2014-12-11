@@ -3,9 +3,9 @@
 
 MODx FormIt hook for the new noCaptcha reCaptcha from Google.
 
-For the reCaptcha service see: https://www.google.com/recaptcha/intro/index.html
-For more information about MODx see: http://modx.com
-For more information about FormIt see: http://rtfm.modx.com/extras/revo/formit
+- For the reCaptcha service see: https://www.google.com/recaptcha/intro/index.html
+- For more information about MODx see: http://modx.com
+- For more information about FormIt see: http://rtfm.modx.com/extras/revo/formit
 
 ##Example usage
 ```

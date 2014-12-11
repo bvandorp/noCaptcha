@@ -19,7 +19,7 @@ MODx FormIt hook for the new noCaptcha reCaptcha from Google.
 ]]
 ```
 
-See simple_example.html for an simple example. :)
+See simple_example.html for a simple example. :)
 
 ##Installation
 

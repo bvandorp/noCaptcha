@@ -8,7 +8,7 @@
 	*/
 	
 	//initial variables
-	$secret_key = $modx->getOption('formit.recaptcha_private_key', $scriptProperties, '');
+	$secret_key = $modx->getOption('formit.recaptcha_private_key', null, '');
 	$user_ip = $_SERVER['REMOTE_ADDR'];
 	$response_string = $hook->getValue('g-recaptcha-response');
 	$result;

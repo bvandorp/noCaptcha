@@ -12,12 +12,11 @@
 	//initial variables
 	$output;
 	$placeholders;
-	$site_key = $modx->getOption('formit.recaptcha_public_key', $scriptProperties, '');
-	$theme = $hook->formit->config['ncTheme'] ?: 'light';
-	$phName = $hook->formit->config['ncName'] ?: 'nocaptcha';
+	$site_key = $modx->getOption('formit.recaptcha_public_key', null, '');
+	$theme = $modx->getOption('ncTheme', $scriptProperties, 'light');
+	$phName = $modx->getOption('ncName', $scriptProperties, 'nocaptcha');
 	//used when fallback to captcha
-	$ncType = $hook->formit->config['ncType'] ?: 'image';
-	
+	$ncType = $modx->getOption('ncType', $scriptProperties, 'image');
 	
 	if(!empty($site_key)){
 		//set array for placeholders

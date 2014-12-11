@@ -15,6 +15,7 @@ MODx FormIt hook for the new noCaptcha reCaptcha from Google.
 &ncTheme=`light|dark` 
 &ncName=`other name for placeholder` 
 &ncType=`image|audio`
+&forceFallback=`0|1`
 ...
 ]]
 ```

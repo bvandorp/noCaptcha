@@ -1,10 +1,11 @@
 <html>
   <head>
-    <title>reCAPTCHA demo: Simple page</title>
+    <title>noCAPTCHA demo: Simple page</title>
   </head>
   <body>
-    [[!FormIt? &preHooks=`preNoCaptcha` &hooks=`noCaptcha,redirect` &redirectTo=`1` &ncTheme=`light` &ncType=`image`]]
+    [[!FormIt? &preHooks=`preNoCaptcha` &successMessage=`Succesfull!` &hooks=`noCaptcha` &ncTheme=`light` &ncType=`image`]]
 
+	[[+fi.successMessage]]
 	<form action="[[~[[*id]]]]" method="post">
 		<input type="text" name="naam" value="" placeholder="naam" /><br/>
 		[[+nocaptcha]]
